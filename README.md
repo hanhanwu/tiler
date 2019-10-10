@@ -51,3 +51,13 @@ All configurations can be changed in the `conf.py` file.
 
 * The way it works is by finding close colors as an area, then fill each area with the tile closest to that color.
 
+### Example 1
+* Run `python tiler.py drum.png tiles/hearts/gen_heart/`
+
+<img src="images/drum.png" width="40%">        <img src="images/drum_out.png" width="40%">
+
+
+### Example 2
+* Run `python tiler.py drum-set.png tiles/hearts/gen_heart/`
+
+<img src="images/drum-set.png" width="40%">        <img src="images/drum_set_out.png" width="40%">
