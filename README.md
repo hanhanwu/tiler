@@ -22,6 +22,7 @@ An image can be built out of circles, lines, waves, cross stitches, legos, minec
 - Make a folder with the tiles (and only the tiles) to build the image;
     - The script `gen_tiles.py` can help in this task; it builds tiles with multiple colors based on the source tile (note: its recommended for the source file to have an RGB color of (240,240,240)). It is used as `python gen_tiles.py path/to/image` and creates a folder with a 'gen_' prefix in the same path as the base image.
 - Run `python tiler.py path/to/image path/to/tiles_folder/`.
+  * For example, `python tiler.py band.png tiles/hearts/gen_heart/` is trying to use heart tiles to modify image "band.png"
 
 ## Configuration
 
@@ -48,59 +49,15 @@ All configurations can be changed in the `conf.py` file.
 
 ## Examples
 
-### Circles
+* The way it works is by finding close colors as an area, then fill each area with the tile closest to that color.
 
-#### Various sizes
+### Example 1
+* Run `python tiler.py drum.png tiles/hearts/gen_heart/`
 
-<img src="images/cake_circles.png" width="40%">
-
-[Original](https://www.flaticon.com/free-icon/cake_1102780) cake image by [pongsakornred](https://www.flaticon.com/authors/pongsakornred) from [FLATICON](https://www.flaticon.com).
-
-#### Fixed
-
-- 10x10
-<img src="images/cake_circles_simple.png" width="40%">
-<img src="images/starry_night_circles_10x10.png" width="100%">
-- 25x25
-<img src="images/starry_night_circles_25x25.png" width="100%">
-- 50x50
-<img src="images/starry_night_circles_50x50.png" width="100%">
+<img src="images/drum.png" width="40%">        <img src="images/drum_out.png" width="40%">
 
 
-### Paper clips
+### Example 2
+* Run `python tiler.py drum-set.png tiles/hearts/gen_heart/`
 
-<img src="images/cake_clips.png" width="40%">
-
-
-### Cross stitch (times)
-
-<img src="images/cake_times.png" width="40%">
-
-<img src="images/starry_night_times.png" width="100%">
-
-
-### Hearts
-
-<img src="images/heart_hearts.png" width="40%">
-
-
-### Legos
-
-<img src="images/cake_lego.png" width="40%">
-<img src="images/starry_night_lego.png" width="100%">
-
-
-### Minecraft blocks
-
-<img src="images/cake_minecraft.png" width="40%">
-<img src="images/starry_night_minecraft.png" width="100%">
-
-
-### Stripes (lines)
-
-<img src="images/cake_stripes.png" width="50%">
-
-
-### At
-
-<img src="images/github_logo_at.png" width="50%">
+<img src="images/drum-set.png" width="40%">        <img src="images/drum_set_out.png" width="40%">
