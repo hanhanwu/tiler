@@ -53,11 +53,14 @@ All configurations can be changed in the `conf.py` file.
 
 ### Example 1
 * Run `python tiler.py drum.png tiles/hearts/gen_heart/`
+* <div>Icons made by <a href="https://www.flaticon.com/authors/flat-icons" title="Flat Icons">Flat Icons</a> from <a href="https://www.flaticon.com/"             title="Flaticon">www.flaticon.com</a></div>
 
 <img src="images/drum.png" width="40%">        <img src="images/drum_out.png" width="40%">
 
 
 ### Example 2
 * Run `python tiler.py drum-set.png tiles/hearts/gen_heart/`
+* <div>Icons made by <a href="https://www.flaticon.com/authors/creaticca-creative-agency" title="Creaticca Creative Agency">Creaticca Creative Agency</a> from <a href="https://www.flaticon.com/"             title="Flaticon">www.flaticon.com</a></div>
+
 
 <img src="images/drum-set.png" width="40%">        <img src="images/drum_set_out.png" width="40%">
